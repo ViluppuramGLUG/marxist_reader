@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text.dart';
 
 class headerview extends StatefulWidget {
   const headerview({Key? key}) : super(key: key);
@@ -36,13 +37,7 @@ class _headerviewState extends State<headerview> {
                 },
               ),
             ),
-            Container(
-              margin: EdgeInsets.all(20),
-              child: Text(
-                input,
-                style: TextStyle(fontSize: 20.0),
-              ),
-            ),
+            text(input),
           ],
         ),
       ),

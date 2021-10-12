@@ -36,6 +36,13 @@ class _headerviewState extends State<headerview> {
                 },
               ),
             ),
+            Container(
+              margin: EdgeInsets.all(20),
+              child: Text(
+                input,
+                style: TextStyle(fontSize: 20.0),
+              ),
+            ),
           ],
         ),
       ),

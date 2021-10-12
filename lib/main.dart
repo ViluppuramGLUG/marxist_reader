@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
+import 'headerview.dart';
 
-void main(){
-  runApp(home());
+void main() {
+  runApp(MyApp());
 }
 
-class home extends StatelessWidget {
+class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Scaffold(
-      appBar: AppBar(
-        title: Text("Marxist"),
-        ),
-      ),
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: headerview(),
     );
   }
 }
-

@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:marxist_reader/button.dart';
+import 'text.dart';
+import 'button.dart';
 
 class headerview extends StatefulWidget {
   const headerview({Key? key}) : super(key: key);
@@ -36,7 +39,10 @@ class _headerviewState extends State<headerview> {
                 },
               ),
             ),
-    
+            text(input),
+            button(() {
+                  nameController.clear();
+                }),
           ],
         ),
       ),

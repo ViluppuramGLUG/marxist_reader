@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:marxist_reader/button.dart';
+import 'package:marxist_reader/nextButton.dart';
 import 'package:marxist_reader/welcomeText.dart';
 import 'text.dart';
 import 'button.dart';
@@ -42,10 +43,12 @@ class _headerviewState extends State<headerview> {
             ),
             text(input),
             button(() {
-                  nameController.clear();
-                }),
+              nameController.clear();
+             }
+            ),
             SizedBox(height:20.0),
             welText(input),
+            nextButton(),
           ],
         ),
       ),
